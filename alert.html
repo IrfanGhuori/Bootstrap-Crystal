@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
+    <meta name="docsearch:language" content="en">
+    <meta name="docsearch:version" content="5">
+    <meta name="description"
+        content="Bootstrap Crystal 1.0 is a free and advanced open source front end development framework for the creation of websites and web apps.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Responsive, Mobile, App, Jquery">
+    <meta name="author" content="Irfan Ghuori">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/animation.css" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Favicon /-->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Favicon \ -->
+
+    <title>Bootstrap Crystal 1.0</title>
+    <!-- Fonts and icons -->
+    <script src="plugin/webfont/webfont.min.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                "families": ["Lato:300,400,700,900"]
+            },
+            custom: {
+                "families": ["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"],
+                urls: ['plugin/css/fonts.min.css']
+            },
+            active: function () {
+                sessionStorage.fonts = true;
+            }
+        });
+    </script>
+    <style>
+        body {
+            font: 1em/1.618 Inter, sans-serif;
+            color: #224;
+            background: url('./images/photo-1618005182384-a83a8bd57fbe.jpg') center/cover no-repeat fixed;
+        }
+
+        h5,
+        .h5 {
+            font-size: 1.6rem;
+            line-height: 2;
+            font-weight: 400;
+            color: #6f6f6f;
+        }
+
+        .subcontent-title {
+            padding-left: 33px;
+            position: relative;
+            margin-bottom: 15px;
+            font-size: 27px;
+            line-height: 30px;
+            font-weight: 600;
+        }
+
+        .subcontent-title span {
+            z-index: 3;
+            display: block;
+            position: relative;
+        }
+
+        .subcontent-title:before {
+            content: '#';
+            position: absolute;
+            left: 0;
+            font-size: 46px;
+            color: #acadb1ab;
+            z-index: 1;
+        }
+
+        .bd-example {
+            position: relative;
+            padding: 2rem;
+            border: 3px solid #eee;
+            overflow: auto;
+        }
+
+        .bd-code {
+            position: relative;
+            padding: 2rem;
+            border: 3px solid #eee;
+            height: 400px;
+            overflow: auto;
+        }
+
+        /* table-responsive */
+
+        .table-responsive {
+            width: 100% !important;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            -ms-overflow-style: -ms-autohiding-scrollbar;
+        }
+
+        div.table-responsive>div.dataTables_wrapper>div.row>div[class^=col-]:first-child,
+        div.table-responsive>div.dataTables_wrapper>div.row>div[class^=col-]:last-child {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        div.table-responsive>div.dataTables_wrapper>div.row>div[class^=col-]:first-child,
+        div.table-responsive>div.dataTables_wrapper>div.row>div[class^=col-]:last-child {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+    <br>
+
+
+    <div class="container">
+        <div class="card border-x1-top border-x1-bottom">
+            <div class="card-header display-4"> Bootstrap Notify </div>
+
+            <div class="card-category p-2"> This plugin helps to turn standard bootstrap alerts into "growl" like
+                notifications.
+                <div> Don't forget to include an animation style sheet : bootstrap-extra\dist\css\animation.css </div>
+            </div>
+
+
+            <hr>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+
+                        <div>
+                            <!-- form -->
+                            <div class="form-group">
+                                <label for="exampleFormControlFile1">Page Placement:</label>
+                                <select class="form-control input-fixed" id="notify_placement_from">
+                                    <option value="top">Top</option>
+                                    <option value="bottom">Bottom</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlFile1">Show Placement:</label>
+                                <select class="form-control input-fixed" id="notify_placement_align">
+                                    <option value="left">Left</option>
+                                    <option value="right" selected="">Right</option>
+                                    <option value="center">Center</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlFile1">State:</label>
+                                <select class="form-control input-fixed" id="notify_state">
+                                    <option value="default">Default</option>
+                                    <option value="primary">Primary</option>
+                                    <option value="secondary">Secondary</option>
+                                    <option value="info">Info</option>
+                                    <option value="success">Success</option>
+                                    <option value="warning">Warning</option>
+                                    <option value="danger">Danger</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlFile1">Start Animation:</label>
+                                <select class="form-control input-fixed" id="notify_start">
+                                    <option value="">Select animation</option>
+                                    <option value="bounce">bounce</option>
+                                    <option value="bounceIn">bounceIn</option>
+                                    <option value="bounceInDown">bounceInDown</option>
+                                    <option value="bounceInLeft">bounceInLeft</option>
+                                    <option value="bounceInRight">bounceInRight</option>
+                                    <option value="bounceInUp">bounceInUp</option>
+                                    <option value="flash">flash</option>
+                                    <option value="pulse">pulse</option>
+                                    <option value="shake">shake</option>
+                                    <option value="headShake">headShake</option>
+                                    <option value="swing">swing</option>
+                                    <option value="tada">tada</option>
+                                    <option value="wobble">wobble</option>
+                                    <option value="jello">jello</option>
+                                    <option value="fadeIn">fadeIn</option>
+                                    <option value="fadeInDown">fadeInDown</option>
+                                    <option value="fadeInDownBig">fadeInDownBig</option>
+                                    <option value="fadeInLeftBig">fadeInLeftBig</option>
+                                    <option value="fadeInRight">fadeInRight</option>
+                                    <option value="fadeInRightBig">fadeInRightBig</option>
+                                    <option value="fadeInUp">fadeInUp</option>
+                                    <option value="fadeInUpBig">fadeInUpBig</option>
+                                    <option value="flipInX">flipInX</option>
+                                    <option value="flipInY">flipInY</option>
+                                    <option value="lightSpeedIn">lightSpeedIn</option>
+                                    <option value="rotateIn">rotateIn</option>
+                                    <option value="rotateInDownLeft">rotateInDownLeft</option>
+                                    <option value="rotateInDownRight">rotateInDownRight</option>
+                                    <option value="rotateInUpLeft">rotateInUpLeft</option>
+                                    <option value="rotateInUpRight">rotateInUpRight</option>
+                                    <option value="hinge">hinge</option>
+                                    <option value="jackInTheBox">jackInTheBox</option>
+                                    <option value="rollIn">rollIn</option>
+                                    <option value="zoomIn">zoomIn</option>
+                                    <option value="zoomInDown">zoomInDown</option>
+                                    <option value="zoomInLeft">zoomInLeft</option>
+                                    <option value="zoomInRight">zoomInRight</option>
+                                    <option value="zoomInUp">zoomInUp</option>
+                                    <option value="slideInDown">slideInDown</option>
+                                    <option value="slideInLeft">slideInLeft</option>
+                                    <option value="slideInRight">slideInRight</option>
+                                    <option value="slideInUp">slideInUp</option>
+
+
+                                </select>
+                            </div>
+
+                            <div> <button id="displayNotif" class="btn btn-success">Display</button></div>
+                            <!-- form ended-->
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlFile1">Style</label>
+                            <select class="form-control input-fixed" id="notify_style">
+                                <option value="withicon">With Icon</option>
+                                <option value="plain">Plain</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlFile1">Notification Sound</label>
+                            <select class="form-control input-fixed" id="notify_sound">
+                                <option value="xsound">Without Sound</option>
+                                <option value="sound">With Sound</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlFile7">Close time:</label>
+                            <input type="number" name="autoclose" class="form-control input-fixed" id="notify_close"
+                                placeholder="Enter seconds to auto-close">
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleFormControlFile6">Close Animation</label>
+                            <select class="form-control input-fixed" id="notify_closed">
+                                <option value="">Select animation</option>
+                                <option value="bounceOut">bounceOut</option>
+                                <option value="bounceOutDown">bounceOutDown</option>
+                                <option value="bounceOutLeft">bounceOutLeft</option>
+                                <option value="bounceOutRight">bounceOutRight</option>
+                                <option value="bounceOutUp">bounceOutUp</option>
+                                <option value="fadeOut">fadeOut</option>
+                                <option value="fadeOutLeft">fadeOutLeft</option>
+                                <option value="fadeOutRight">fadeOutRight</option>
+                                <option value="fadeOutDownBig">fadeOutDownBig</option>
+                                <option value="fadeOutLeftBig">fadeOutLeftBig</option>
+                                <option value="fadeOutRightBig">fadeOutRightBig</option>
+                                <option value="fadeOutUp">fadeOutUp</option>
+                                <option value="fadeOutUpBig">fadeOutUpBig</option>
+                                <option value="flipOutX">flipOutX</option>
+                                <option value="flipOutY">flipOutY</option>
+                                <option value="lightSpeedOut">lightSpeedOut</option>
+                                <option value="rotateOut">rotateOut</option>
+
+
+                            </select>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+                <hr>
+            </div>
+            <!-- card body -->
+        </div>
+    </div>
+
+    <br>
+
+    <div class="container light-glass">
+        <h5 id="basic">Basic Notify</h5>
+        <div class="bd-example">
+            <button class="btn btn-dark ripple-effect" id="example1">Show Example</button>
+        </div>
+
+        <pre class="bd-example">
+    <code class="language-javascript">
+      $.notify({
+      // options
+      message: 'Hello World'
+      },{
+      // settings
+      type: 'danger'
+      });
+    </code>
+    </pre>
+
+
+        <h5 id="full">Full List Of Options/Settings</h5>
+        <div class="bd-example">
+            <button class="btn btn-dark ripple-effect" id="example2">Show Example</button>
+        </div>
+        <pre class="bd-code">
+    <code class="language-javascript">
+     $.notify({
+      // options
+      icon: 'flaticon-alarm-1',
+      title: 'Bootstrap notify',
+      message: 'Turning standard Bootstrap alerts into "notify" like notifications',
+      url: '#index.html',
+      target: '_self'
+      },{
+      // settings
+      element: 'body',
+      position: null,
+      type: "info",
+      allow_dismiss: true,
+      newest_on_top: false,
+      showProgressbar: false,
+      placement: {
+      from: "top",
+      align: "right"
+      },
+      offset: 20,
+      spacing: 10,
+      z_index: 1031,
+      delay: 5000,
+      timer: 1000,
+      url_target: '_blank',
+      mouse_over: null,
+      animate: {
+      enter: 'animated fadeInDown',
+      exit: 'animated fadeOutUp'
+      },
+      onShow: null,
+      onShown: null,
+      onClose: null,
+      onClosed: null,
+      icon_type: 'class',
+      template: ' &lt; div data-notify="container" class="col-xs-11 col-sm-3 alert alert-{0}" role="alert">' +
+      ' &lt; button type="button" aria-hidden="true" class="close" data-notify="dismiss">× &lt;/button>' +
+      ' &lt; span data-notify="icon"> &lt;/span> ' +
+      ' &lt; span data-notify="title">{1} &lt;/span> ' +
+      ' &lt; span data-notify="message">{2} &lt;/span>' +
+      ' &lt; div class="progress" data-notify="progressbar">' +
+      ' &lt; div class="progress-bar progress-bar-{0}" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"> &lt;div>' +
+      ' &lt; div>' +
+      ' &lt; a href="{3}" target="{4}" data-notify="url"> &lt;/a>' +
+      '&lt;/div>' 
+      });
+		</code>
+	</pre>
+        <h4 class="subcontent-title" id="options"><span>Options</span></h4>
+        <div class="table-responsive">
+            <table class="display table table-striped table-hover" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Type / Values</th>
+                        <th>Required</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-title="Code">icon</td>
+                        <td data-title="Type / Values"><em>class</em> | <em>src</em></td>
+                        <td data-title="Required"><code>No</code></td>
+                        <td data-title="Description">This is the icon that will be displayed within the notify
+                            notification. This icon can either be a class (Font Icon) or an image url. Please keep in
+                            mind if you wish to use an image url that you must set icon_type to img in the
+                            options.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-title="Code">title</td>
+                        <td data-title="Type / Values"><em>string</em></td>
+                        <td data-title="Required"><code>No</code></td>
+                        <td data-title="Description">This is the title that will be displayed within the notify
+                            notification. Please keep in mind unless you style the [data-notify="title"] in css this
+                            will look identical to the message.</td>
+                    </tr>
+                    <tr>
+                        <td data-title="Code">message</td>
+                        <td data-title="Type / Values"><em>string</em></td>
+                        <td data-title="Required"><code>Yes</code></td>
+                        <td data-title="Description">This is the message that will be displayed within the notify
+                            notification.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-title="Code">url</td>
+                        <td data-title="Type / Values"><em>web address</em></td>
+                        <td data-title="Required"><code>No</code></td>
+                        <td data-title="Description">If this value is set it will make the entire notify (except the
+                            close button) a clickable area. If the user clicks on this area it will take them to the url
+                            specified here.</td>
+                    </tr>
+                    <tr>
+                        <td data-title="Code">target</td>
+                        <td data-title="Type / Values"><em>_blank</em> | <em>_self</em> | <em>_parent</em> |
+                            <em>_top</em>
+                        </td>
+                        <td data-title="Required"><code>no</code></td>
+                        <td data-title="Description">The target attribute specifies where to open the linked
+                            notification.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h4 class="subcontent-title" id="settings"><span>Settings</span></h4>
+        <div class="table-responsive">
+            <table class="col-xs-12 table table-bordered table-condensed">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Type / Values</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-title="Code">element</td>
+                        <td data-title="Type / Values"><em>string</em></td>
+                        <td data-title="Default"><code>body</code></td>
+                        <td data-title="Description">Appends the notification to a specific element. If the element is
+                            set to anything other than the body of a document it switches from a position: fixed to
+                            position: absolute.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-title="Code">position</td>
+                        <td data-title="Type / Values"><em>static</em> | <em>fixed</em> | <em>relative</em> |
+                            <em>absolute</em> | <em><code>null</code></em>
+                        </td>
+                        <td data-title="Default"><code>null</code></td>
+                        <td data-title="Description">Allows users to specify a custom position to the notification
+                            container element.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-title="Code">type</td>
+                        <td data-title="Type / Values"><em>string</em></td>
+                        <td data-title="Default"><code>info</code></td>
+                        <td data-title="Description">Defines the style of the notification using bootstraps native alert
+                            styles. Please keep in mind that when the notification is generated the type gets prefixed
+                            with alert-. When using native alert styles this will not be an issue,
+                            but if you create a new style such as pink when setting up the css you have to use the class
+                            <code>alert-pink</code>.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-title="Code">allow_dismiss</td>
+                        <td data-title="Type / Values"><em>boolean</em></td>
+                        <td data-title="Default"><code>true</code></td>
+                        <td data-title="Description">If this value is set to false it will hide the
+                            <code>data-grow="dismiss"</code> element. Please keep in mind if you modify the
+                            <code>template</code> setting and do not include a <code>data-notify="dismiss"</code>
+                            element even with this set to true there will be no element for a user to click to close the
+                            notification.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-title="Code">showProgressbar</td>
+                        <td data-title="Type / Values"><em>boolean</em></td>
+                        <td data-title="Default"><code>false</code></td>
+                        <td data-title="Description">This <code>boolean</code> is used to determine if the notification
+                            should display a progress bar.</td>
+                    </tr>
+                    <tr>
+                        <td data-title="Code">placement.from</td>
+                        <td data-title="Type / Values"><em>string</em></td>
+                        <td data-title="Default"><code>top</code></td>
+                        <td data-title="Description">This controls where if the notification will be placed at the
+                            <code>top</code> or <code>bottom</code> of your element.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-title="Code">placement.align</td>
+                        <td data-title="Type / Values"><em>string</em></td>
+                        <td data-title="Default"><code>right</code></td>
+                        <td data-title="Description">This controls if the notification will be placed in the
+                            <code>left</code>, <code>center</code> or <code>right</code> side of the element.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-title="Code">offset</td>
+                        <td data-title="Type / Values"><em>integer</em></td>
+                        <td data-title="Default"><code>20</code></td>
+                        <td data-title="Description">This adds padding in <code>pixels</code> between the element and
+                            the notification creating a space between their edges.</td>
+                    </tr>
+                    <tr>
+                        <td data-title="Code">offset.x</td>
+                        <td data-title="Type / Values"><em>integer</em></td>
+                        <td data-title="Default"><code>20</code></td>
+                        <td data-title="Description">This adds adding on the <code>x</code> axis in <code>pixels</code>
+                            between the element and the notification creating a space between their edges.</td>
+                    </tr>
+                    <tr>
+                        <td data-title="Code">offset.y</td>
+                        <td data-title="Type / Values"><em>integer</em></td>
+                        <td data-title="Default"><code>20</code></td>
+                        <td data-title="Description">This adds padding on the <code>y</code> axis in <code>pixels</code>
+                            between the element and the notification creating a space between their edges.</td>
+                    </tr>
+                    <tr>
+                        <td data-title="Code">spacing</td>
+                        <td data-title="Type / Values"><em>integer</em></td>
+                        <td data-title="Default"><code>10</code></td>
+                        <td data-title="Description">This adds a padding in <code>pixels</code> between notifications
+                            with the same placement creating a space between their edges.</td>
+                    </tr>
+                    <tr>
+                        <td data-title="Code">z_index</td>
+                        <td data-title="Type / Values"><em>integer</em></td>
+                        <td data-title="Default"><code>1031</code></td>
+                        <td data-title="Description">Pretty simple, this sets the css property <code>z-index</code> for
+                            the notification. You may have to raise this number if you have other elements overlapping
+                            the notification.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-title="Code">delay</td>
+                        <td data-title="Type / Values"><em>integer</em></td>
+                        <td data-title="Default"><code>5000</code></td>
+                        <td data-title="Description">If <code>delay</code> is set higher than <code>0</code> then the
+                            notification will auto-close after the <code>delay</code> period is up. Please keep in mind
+                            that delay uses milliseconds so <code>5000</code> is <code>5</code> seconds.</td>
+                    </tr>
+                    <tr>
+                        <td data-title="Code">timer</td>
+                        <td data-title="Type / Values"><em>integer</em></td>
+                        <td data-title="Default"><code>1000</code></td>
+                        <td data-title="Description">This is the amount of milliseconds removed from the notify at every
+                            <code>timer</code> milliseconds. So to make that a little less confusing every
+                            <code>1000 milliseconds</code> there will be <code>1000 milliseconds</code> removed from the
+                            remaining time of the notify delay. If this is set higher then delay the notify will not be
+                            removed until timer has run out.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-title="Code">url_target</td>
+                        <td data-title="Type / Values"><em>_blank</em> | <em>_self</em> | <em>_parent</em> |
+                            <em>_top</em>
+                        </td>
+                        <td data-title="Default"><code>'_blank'</code></td>
+                        <td data-title="Description">This sets the target of the url for a notification. please check
+                            <code>HTML &lt;a&gt; target Attribute</code> to learn more about these options.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-title="Code">mouse_over</td>
+                        <td data-title="Type / Values"><em>pause</em> | <em><code>null</code></em></td>
+                        <td data-title="Default"><code>null</code></td>
+                        <td data-title="Description">By default this does nothing. If you set this option to pause it
+                            will
+                            <code>pause</code> the timer on the notification delay. Since version 2.0.0 the timer will
+                            not reset it will continue from it's last tick.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-title="Code">animate.enter</td>
+                        <td data-title="Type / Values">string</td>
+                        <td data-title="Default"><code>animated fadeInDown</code></td>
+                        <td data-title="Description">This will control the animation used to bring the generate the
+                            notification on screen. Since version 2.0.0 all animations are controlled using css. This
+                            plugin is not com packaged with any animations. Please use <a
+                                href="https://daneden.github.io/animate.css/" target="_blank">Animate.css</a> by <a
+                                href="https://daneden.me/" target="_blank">Daniel Eden</a> or you can always write your
+                            own css animations.</td>
+                    </tr>
+                    <tr>
+                        <td data-title="Code">animate.exit</td>
+                        <td data-title="Type / Values">string</td>
+                        <td data-title="Default"><code>animated fadeOutUp</code></td>
+                        <td data-title="Description">This will control the animation used to bring the generate the
+                            notification on screen. Since version 2.0.0 all animations are controlled using css. This
+                            plugin is not com packaged with any animations. Please use <a
+                                href="https://daneden.github.io/animate.css/" target="_blank">Animate.css</a> by <a
+                                href="https://daneden.me/" target="_blank">Daniel Eden</a> or you can always write your
+                            own css animations.</td>
+                    </tr>
+                    <tr>
+                        <td data-title="Code">onShow</td>
+                        <td data-title="Type / Values">function</td>
+                        <td data-title="Default"><code>null</code></td>
+                        <td data-title="Description">This event fires immediately when the <code>show</code> instance
+                            method is called.</td>
+                    </tr>
+                    <tr>
+                        <td data-title="Code">onShow</td>
+                        <td data-title="Type / Values">function</td>
+                        <td data-title="Default"><code>null</code></td>
+                        <td data-title="Description">This event is fired when the modal has been made visible to the
+                            user (will wait for CSS transitions to complete).</td>
+                    </tr>
+                    <tr>
+                        <td data-title="Code">onClose</td>
+                        <td data-title="Type / Values">function</td>
+                        <td data-title="Default"><code>null</code></td>
+                        <td data-title="Description">This event is fired immediately when the notification is
+                            <code>closing</code>.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-title="Code">onClosed</td>
+                        <td data-title="Type / Values">function</td>
+                        <td data-title="Default"><code>null</code></td>
+                        <td data-title="Description">his event is fired when the modal has finished closing and is
+                            removed from the document (will wait for CSS transitions to complete).</td>
+                    </tr>
+                    <tr>
+                        <td data-title="Code">icon_type</td>
+                        <td data-title="Type / Values">string</td>
+                        <td data-title="Default"><code>class</code></td>
+                        <td data-title="Description">This is used to let the plugin know if you are using an
+                            <code>icon font</code> for images or if you are using <code>image</code>. If this setting is
+                            not set to <code>class</code> it will assume you are using an <code>img</code>. Please keep
+                            in mind if you are using an <code>image</code> you to set <code>icon</code> to the
+                            <code>src</code> of the <code>image</code>.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-title="Code">template</td>
+                        <td data-title="Type / Values">HTML</td>
+                        <td data-title="Default"><code>code below</code></td>
+                        <td data-title="Description">Since version 3.0.0 the template option has been revamped in hopes
+                            of giving users more control over the layout. Please find the code for the default template
+                            below.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+    </div>
+
+    </div>
+    <div class="container">
+        <div class="card-footer ">
+            <div class="float-right"> <a style="text-decoration: none;" href="mailto:m.irfan_ahmed@hotmail.com"> Think
+                    big, I'll make it possible :) </a></div>
+        </div> <br><br>
+    </div>
+    </div>
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        $('#displayNotif').on('click', function () {
+            var placementFrom = $('#notify_placement_from option:selected').val();
+            var placementAlign = $('#notify_placement_align option:selected').val();
+            var state = $('#notify_state option:selected').val();
+            var autoclose = $('input[name=autoclose]').val();
+            var style = $('#notify_style option:selected').val();
+            var sound = $('#notify_sound option:selected').val();
+            var Animate_Start = $('#notify_start option:selected').val();
+            var Animate_Close = $('#notify_closed option:selected').val();
+            var content = {};
+            content.message = 'Turning standard Bootstrap alerts into "notify" like notifications';
+            content.title = 'Bootstrap notify';
+            if (style == "withicon") {
+                content.icon = 'fa fa-bell';
+            } else {
+                content.icon = 'none';
+            }
+            if (sound == "sound") {
+                $.playSound("images/beeb.mp3");
+            }
+            content.mouse_over = true;
+            content.url = '#index.html';
+            content.target = '_self';
+            var notify = $.notify(content, {
+                type: state,
+                animate: {
+                    enter: 'animated ' + Animate_Start,
+                    exit: 'animated ' + Animate_Close
+                },
+                placement: {
+                    from: placementFrom,
+                    align: placementAlign
+                },
+                time: 1000,
+                delay: 0,
+            });
+            if (!autoclose == "") {
+                setTimeout(() => {
+                    notify.close();
+                }, autoclose);
+            }
+        });
+
+
+        $('#example1').on('click', function () {
+            $.notify({
+                // options
+                message: 'Hello World',
+                animate: {
+                    enter: 'animated fadeInDown',
+                    exit: 'animated fadeOutUp'
+                }
+            }, {
+                // settings
+                type: 'info',
+                delay: 100000
+            });
+        });
+        $('#example2').on('click', function () {
+            $.notify({
+                // options
+                icon: 'flaticon-alarm-1',
+                title: 'Bootstrap notify',
+                message: 'Turning standard Bootstrap alerts into "notify" like notifications',
+                url: '#index.html',
+                target: '_self'
+            }, {
+                // settings
+                element: 'body',
+                position: null,
+                type: "info",
+                allow_dismiss: true,
+                newest_on_top: false,
+                showProgressbar: false,
+                placement: {
+                    from: "top",
+                    align: "right"
+                },
+                offset: 20,
+                spacing: 10,
+                z_index: 1031,
+                delay: 5000,
+                timer: 1000,
+                url_target: '_blank',
+                mouse_over: null,
+                animate: {
+                    enter: 'animated fadeInDown',
+                    exit: 'animated fadeOutUp'
+                },
+                onShow: null,
+                onShown: null,
+                onClose: null,
+                onClosed: null,
+                icon_type: 'class',
+                template: '<div data-notify="container" class="col-xs-11 col-sm-3 alert alert-{0}" role="alert">' +
+                    '<button type="button" aria-hidden="true" class="close" data-notify="dismiss">×</button>' +
+                    '<span data-notify="icon"></span> ' +
+                    '<span data-notify="title">{1}</span> ' +
+                    '<span data-notify="message">{2}</span>' +
+                    '<div class="progress" data-notify="progressbar">' +
+                    '<div class="progress-bar progress-bar-{0}" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>' +
+                    '</div>' +
+                    '<a href="{3}" target="{4}" data-notify="url"></a>' +
+                    '</div>'
+            });
+        })
+    </script>
+</body>
+
+</html>

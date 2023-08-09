@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
+    <meta name="docsearch:language" content="en">
+    <meta name="docsearch:version" content="5">
+    <meta name="description" content="Bootstrap Crystal 1.0 is a free and advanced open source front end development framework for the creation of websites and web apps.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Responsive, Mobile, App, Jquery">
+    <meta name="author" content="Irfan Ghuori">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/animation.css" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+
+    <!-- Favicon /-->
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Favicon \ -->
+
+    <title>Bootstrap Crystal 1.0</title>
+    <!-- Fonts and icons -->
+    <style>
+        .heading {
+            font-weight: 500;
+            font-size: 1.6rem;
+        }
+        
+        .heading-dark {
+            font-weight: 500;
+            font-size: 1.1rem;
+            color: rgb(63, 63, 63);
+        }
+        
+        .heading-yellow {
+            font-weight: 500;
+            font-size: 0.8rem;
+            color: rgb(220, 42, 50);
+        }
+        body {
+            font: 1em/1.618 Inter, sans-serif;
+            color: #224;
+            background: url('./images/photo-1618005182384-a83a8bd57fbe.jpg') center/cover no-repeat fixed;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <br>
+        <div class="card">
+            <div class="card-header display-7">Fancy Title
+                <div class="heading-dark"><a href="https://mft.musings.it/" target="_blank" rel="noreferrer"> by
+                        musings.it </a></div>
+
+            </div>
+            <div class="card-body">
+                <div>the jQuery plugin that animates your document &lt;title> & favicon!</div>
+                <hr>
+                <div class="col">
+                    <div class="heading">How to use it</div>
+                    Files to include You will have to include jQuery library and mFancyTitle file. I suggest that you include them at the end of your
+
+                    <head> section.
+                        <pre><code>
+    &lt;script type="text/javascript" src="js/jquery-latest.min.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="dist/pluginjs/mfan/jquery.mFancyTitle-0.4.1.min.js"&gt;&lt;/script&gt;
+   </code></pre>
+                </div>
+
+                <hr>
+
+                <div class="col">
+                    <div class="heading">mFancyTitle initialization</div>
+                    <div>Here's the code for a basic initialization that only changes your document &lt;title> and favicon(s) on document visibility change.</div>
+                    <br>
+                    <pre><code>$.mFancyTitle({
+	mftMissYou: true,
+	mftMissYouTitle: 'Hey! I miss you!', // new document title: it will appear when the user leaves your page and open another tab in the browser
+	mftMissYouFavicon: {
+		'apple-touch-icon-precomposed': 'path-to/apple-touch-icon-152x152.png',
+		'icon': 'path-to/favicon-32x32.png',
+		'shortcut icon': 'path-to/favicon.ico'
+	} // new favicons: they will be visible when the user leaves your page and open another tab in the browser
+});</code>
+<br>
+</pre>
+                </div>
+
+
+                <div class="col">
+                    <div class="heading">Configurable parameters</div>
+                    <div class="heading-dark">1. "I miss you" parameters</div>
+                    <div class="heading-yellow">mftMissYou (boolean)</div>
+                    Boolean that defines if &lt;title> and favicon(s) have to be changed when the user leaves your page to open a new tab in the browser. Accepted values: true, false. Default value: true. How to set:
+                    <p></p>
+                    <pre>
+<code>$.mFancyTitle({
+mftMissYou: true, // document title and favicon(s) will change when the user leaves your page and open another tab in the browser
+});</code></pre>
+
+                    <div class="heading-dark">Example:</div>
+                    <div><img class="img-thumbnail" src="images/BrowserTemplate02.png" alt="fncytitle"></div>
+                </div>
+
+                <hr>
+
+                <div class="col">
+
+                    <div class="heading-yellow">mftMissYouFavicon (js Object)</div>
+                    <div> It is the js Object with the files that substitute your original document favicon(s) when the user leaves your page to open a new tab in the browser. The new files will substitute those normally set in the
+
+                        <head> section of your page like this:
+                            <div>
+                                <pre>
+    <code>
+    &lt;link rel="apple-touch-icon-precomposed" sizes="152x152" href="path-to/apple-touch-icon-152x152.png"&gt; // General use iOS/Android icon, auto-downscaled by devices
+    &lt;link rel="icon" type="image/png" href="path-to/favicon-32x32.png" sizes="32x32"&gt; // Icon for any desktop browser except IE
+    &lt;link rel="shortcut icon" href="path-to/favicon.ico"&gt; // Default required by IE. Chrome and Safari may pick ico over png
+    </code>
+    </pre>
+                                <div>Default: {'apple-touch-icon-precomposed': '','icon': '','shortcut icon': ''}. If not set and mftMissYou is set to true uses default value. How to set:</div>
+                            </div>
+                            <div>
+                                <pre><code>$.mFancyTitle({
+    mftMissYouFavicon: {
+    'apple-touch-icon-precomposed': 'path-to/apple-touch-icon-152x152.png',
+    'icon': 'path-to/favicon-32x32.png',
+    'shortcut icon': 'path-to/favicon.ico'
+    } // new favicons: will substitute your original favicons when the user leaves your page and open another tab in the browser
+    });</code></pre>
+                            </div>
+                    </div>
+                    <div class="heading-dark">Example:</div>
+                    <div>
+                        <img class="img-thumbnail" src="images/BrowserTemplate01.png" alt="funcytitle">
+                    </div>
+                    <p></p>
+                </div>
+
+
+                <div class="col">
+                    <div class="heading-dark"> 2. Animation parameters</div>
+                    <div class="heading-yellow">mftTitleBlink (array of booleans)</div>
+                    Array of booleans that defines if &lt;title> has to blink in visible and hidden state respectively. If both mftTitleMarquee and mftTitleBlink (see next) are set to true, mftTitleMarquee will prevail. Accepted values: true, false for each array value.
+                    Short notation as string for both values (ex. true) is accepted. Default value: [false, false]. How to set:
+
+                    <div>
+                        <pre>
+    <code>
+    $.mFancyTitle({
+    mftTitleBlink: [true, false] // document title will blink in visible state and NOT in hidden state
+    });
+    </code>
+    </pre>
+                    </div>
+
+                    <div class="heading-yellow">mftTitleBlinkInterval (array of integers)</div>
+                    Array of integers that defines the blinking interval (in msec) in visible and hidden state respectively. Accepted values: integer numbers for each array value. Short notation as number for both values (ex. 1000) is accepted. Default value: [1000, 1000].
+                    How to set:
+                    <div> <br>
+                        <pre><code>$.mFancyTitle({
+	mftTitleBlinkInterval: [500, 1000] // document title will blink every 500 msec in visible state and every 1 sec in hidden state
+});</code></pre>
+                    </div>
+                </div>
+
+
+
+                <div class="col">
+                    <div class="heading-yellow"> mftTitleAltText (array of strings)</div>
+                    <div>Array of strings that contains the alternate text to show if mftTitleBlink is true in visible and hidden state respectively. Accepted values: strings for each array value. Short notation as string for both values (ex. 'blinking text')
+                        is accepted. Default value: ['', '']. How to set:</div>
+                    <div>
+                        <pre><code>$.mFancyTitle({
+                mftTitleAltText: ['blinking text visible', ''] // document title will have an alternative text in visible state and no text in hidden state (real blinking)
+            });</code></pre>
+                    </div>
+                    <div class="heading-dark">Example for visible state:</div>
+                    <div> <img class="img-thumbnail" src="images/BrowserTemplate04.gif" alt="fncytitle"></div>
+                </div>
+
+
+                <div class="col">
+                    <div class="heading-dark">mftFaviconBlink (array of booleans)</div>
+                    Array of booleans that defines if the favicon(s) have to blink in visible and hidden state respectively. Accepted values: true, false for each array value. Short notation as string for both values (ex. true) is accepted. Default value: [false, false].
+                    How to set:
+                    <div>
+                        <pre><code>$.mFancyTitle({
+            mftFaviconBlink: [true, false] // favicon will blink in visible state and NOT in hidden state
+        });</code></pre>
+                    </div>
+                    <br>
+                    <div class="heading-dark">mftFaviconBlinkInterval (array of integers)</div>
+                    <div>
+                        Array of integers that defines the blinking interval (in msec) in visible and hidden state respectively. Accepted values: integer numbers for each array value. Short notation as number for both values (ex. 1000) is accepted. Default value: [1000, 1000].
+                        How to set:
+                    </div>
+                    <div>
+                        <pre><code>$.mFancyTitle({
+        mftFaviconBlinkInterval: [500, 1000] // document favicon will blink every 500 msec in visible state and every 1 sec in hidden state
+    });</code></pre>
+                    </div>
+
+                    <div>
+                        <br>
+                        <div class="heading-dark">mftFaviconAltIcon (js Object of Objects)</div>
+                        Object of js Objects that contains the alternate icons to be shown if mftFaviconBlink is true in visible and hidden state respectively. Accepted values: js Object for each array value. Default value: { 'visible': {'apple-touch-icon-precomposed': '','icon':
+                        '','shortcut icon': ''}, 'hidden': {'apple-touch-icon-precomposed': '','icon': '','shortcut icon': ''} }. How to set:
+                    </div>
+                    <br>
+                    <div>
+                        <pre><code>$.mFancyTitle({
+        mftFaviconAltIcon: {
+            'visible': {
+                'apple-touch-icon-precomposed': 'path-to/apple-touch-icon-152x152.png', // path to alternative icon(s) for visible state
+                'icon': 'path-to/favicon-32x32.png',
+                'shortcut icon': 'path-to/favicon.ico'
+            },
+            'hidden': {
+                'apple-touch-icon-precomposed': '', // path to alternative icon(s) for hidden state
+                'icon': '', // if left blank there will be no alternative icon (real blinking)
+                'shortcut icon': ''
+            }
+        }
+    });</code></pre>
+                    </div>
+                </div>
+
+
+                <br>
+                <div class="col">
+                    <div class="heading-dark">Example for visible state:</div>
+                    <div> <img class="img-thumbnail" src="images/BrowserTemplate05.gif" alt="fncytitle"></div> <br>
+
+                    <div class="heading-yellow">mftTitleMarquee (array of booleans)</div>
+
+                    Array of booleans that defines if &lt;title> has scroll as if in a &lt;marquee> element in visible and hidden state respectively. If both mftTitleMarquee and mftTitleBlink are set to true, mftTitleMarquee will prevail. Accepted values: true, false for
+                    each array value. Short notation as string for both values (ex. true) is accepted. Default value: [false, false]. How to set:
+                    <div>
+                        <pre><code>
+    $.mFancyTitle({
+    mftTitleMarquee: [false, true] // document title will NOT scroll in visible state but it will scroll in hidden state
+    });
+    </code></pre>
+
+                        <div>
+                            <div class="heading-yellow"> mftTitleMarqueeDir (array of strings)</div>
+                            Array of strings that defines in which direction the &lt;title> text has to scroll if mftTitleMarquee is true in visible and hidden state respectively. Accepted values: strings for each array value. Short notation as string for both values (ex. 'right')
+                            is accepted. Default value: ['left', 'left']. How to set:
+                        </div> <br>
+                        <div>
+                            <pre><code>
+    $.mFancyTitle({
+    mftTitleMarqueeDir: ['right', 'left'] // document title will scroll right in visible state and left in hidden state
+    });</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div class="heading-yellow">mftTitleMarqueeDelay (array of integers)</div>
+                    Array of integers that defines the &lt;title> text scrolling delay (in msec) after every movement in visible and hidden state respectively. Accepted values: integer numbers for each array value. Short notation as number for both values (ex. 300) is accepted.
+                    Default value: [200, 1000]. How to set:
+                    <div> <br>
+                        <pre><code>$.mFancyTitle({
+            mftTitleMarqueeDelay: [500, 1000] // the document title will wait 500 msec after every movement in visible state and 1 sec in hidden state
+        });</code></pre>
+                    </div>
+                    <div class="heading-dark">Example for visible state:</div>
+                    <div>
+                        <img class="img-thumbnail" src="images/BrowserTemplate06.gif" alt="funcytitle">
+                    </div>
+                </div>
+                <!-- Mian div tag --->
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="plugin/mfan/jquery.mfancytitle-0.4.1.min.js"></script>
+    <script>
+        $.mFancyTitle({
+            mftMissYou: true,
+            mftMissYouTitle: 'Hey! I miss you!', // new document title: it will appear when the user leaves your page and open another tab in the browser
+            mftMissYouFavicon: {
+                'apple-touch-icon-precomposed': 'images/favicon/apple-icon-152x152.png',
+                'icon': './images/favicon/faviconx.ico',
+                'shortcut icon': './images/favicon/favicon-16x16.png'
+            } // new favicons: they will be visible when the user leaves your page and open another tab in the browser
+        });
+    </script>
+</body>
+
+</html>

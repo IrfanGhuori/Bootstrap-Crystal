@@ -1,0 +1,41 @@
+{
+    "name": "bootstrap-extra-master",
+    "version": "5",
+    "description": "Create responsive, mobile projects on the web with the world's most popular Bootstrap-extra Frontend Component Library on the Web. Bootstrap-extra is an updated version of bootstrap 4.x. I try to redesign some components and add some more features.",
+    "main": "\\js\\bootstrap.js",
+    "scripts": {
+        "test": "init comment"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/IrfanGhuori/Bootstrap-extra.git"
+    },
+    "keywords": [
+        "bootstrap",
+        "w3schools",
+        "bootstrap",
+        "cdn",
+        "bootstrap",
+        "4",
+        "bootstrap",
+        "3",
+        "bootstrap",
+        "examples",
+        "bootstrap",
+        "templates",
+        "bootstrap",
+        "tutorial",
+        "pdf",
+        "bootstrap",
+        "documentation"
+    ],
+    "author": "Muhammad Irfan Abbas",
+    "license": "MTI",
+    "bugs": {
+        "url": "https://github.com/IrfanGhuori/Bootstrap-extra/issues"
+    },
+    "homepage": "https://github.com/IrfanGhuori/Bootstrap-extra#readme",
+    "dependencies": {
+        "update": "^5"
+    }
+}

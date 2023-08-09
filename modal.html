@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="docsearch:language" content="en">
+    <meta name="docsearch:version" content="5">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Bootstrap Crystal 1.0</title>
+<style>
+    body {
+    font: 1em/1.618 Inter, sans-serif;
+    color: #224;
+    background: url('./images/photo-1618005182384-a83a8bd57fbe.jpg') center/cover no-repeat fixed;
+    }
+</style>
+</head>
+
+<body>
+    <div class="container"><br>
+        <div class="card">
+            <div class="card-header display-7"> Modal </div>
+            <div class="card-body">
+                <div class="display-7"> </div>
+                <!-- Simple Modal -->
+                <div class="code-container">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+Simple Example
+</button>
+
+                  
+                </div>
+
+                <pre>
+	<code>
+		<!-- Simple Modal -->
+<div class="code-container">
+	<!-- Button trigger modal -->
+&lt;button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+Simple Example
+&lt;button>
+	<!-- Modal -->
+&lt;div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	&lt;div class="modal-dialog" role="document">
+	&lt;div class="modal-content">
+	&lt;div class="modal-header">
+	&lt;h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+	&lt;button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	&lt;span aria-hidden="true">&times;</span>
+	&lt;/button>
+	&lt;/div>
+	&lt;div class="modal-body">
+	...
+	&lt;/div>
+	&lt;div class="modal-footer">
+	&lt;button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	&lt;button type="button" class="btn btn-primary">Save changes</button>
+	&lt;/div>
+	&lt;/div>
+	&lt;div>
+ &lt;div>
+	</code>
+</pre>
+                <!-- Simple Modal -->
+
+
+                <!-- Extra Desgin  -->
+                <hr>
+
+                <div>
+
+                    <div class="container">
+                        <h1> Play YouTube or Vimeo Videos</h1>
+
+                        <pre>
+
+	<code>
+Code Example: 
+-just for only video modal- 
+Note:: Don't change ID : #videoModal Use this ID for the button and modal
+	
+&lt;button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="..." data-target="#videoModal">
+Play Video 1 - autoplay
+&lt;button>
+
+&lt;!-- Modal -->
+&lt;div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+&lt;div class="modal-dialog" role="document">
+&lt;div class="video-content">
+&lt;div class="modal-body">
+&lt;div type="button" class="close-video" data-dismiss="modal" aria-label="Close">&lt;/div>        
+&lt;!-- 16:9 aspect ratio -->
+&lt;div class="embed-responsive embed-responsive-16by9">
+&lt;iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay">&lt;/iframe>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div> 
+	  
+	</code>
+</pre>
+
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/bL3lTh_bzEU" data-target="#videoModal">
+			Play Video 1 - autoplay
+			</button>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/IVsBKYzKdfQ" data-target="#videoModal">
+			Play Video 2
+			</button>
+
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/VbcmhtGugBo" data-target="#videoModal">
+			Play Video 3
+			</button>
+
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="https://player.vimeo.com/video/73125785?h=e8bb39d840" data-target="#videoModal">
+			Play Vimeo Video
+			</button>
+
+
+                       
+
+                    <br>
+                    <div class="display-7 ml-3">Watch tutorial</div>
+                    <div class="d-flex justify-content-center mt-5">
+                        <div class="card col-md-8 shadow-6dp p-0">
+                            <video style="width: 100%;" controls><source src="images/tutorial.mp4" type="video/mp4"></video>
+                        </div>
+
+                    </div>
+                    <br><br>
+                </div>
+
+            </div>
+            <!-- Extra Desgin  -->
+
+        </div>
+        <!-- Card-body -->
+    </div>
+    <!-- Card -->
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-secondary " data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-sm btn-primary"> Save Changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+
+
+
+ <!-- Modal -->
+ <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="video-content">
+            <div class="modal-body">
+                <div type="button" class="close-video" data-dismiss="modal" aria-label="Close"></div>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allow="autoplay"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+</script>
+</body>
+
+</html>
