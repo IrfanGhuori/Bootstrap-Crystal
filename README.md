@@ -1,12 +1,12 @@
 
-![alt text](https://i.ibb.co/5M391D8/banner.png)
+# This version still under working 
 
-# Bootstrap-extra
-Create responsive, mobile projects on the web with the world's most popular Bootstrap-extra Frontend Component Library on the Web. 
-Bootstrap-extra is an updated version of bootstrap  I try to redesign some components and add some more features.
+# Bootstrap-Crystal
+Create responsive, mobile projects on the web with the world's most popular Bootstrap-Crystal Frontend Component Library on the Web. 
+Bootstrap-Crystal is an updated version of bootstrap  I try to redesign some components and add some more features.
  Your feedback is really important to me
 
-Share Bootstrap-extra error and feedback
+Share Bootstrap-Crystal error and feedback
 IrfanGhuori@yandex.com
 
 # Glassmorphism effect update
@@ -39,14 +39,14 @@ IrfanGhuori@yandex.com
 # Quick start
 - Several quick start options are available:
 - Download the latest release.
-- Clone the repo: git clone https://github.com/IrfanGhuori/Bootstrap-extra.git
-- Install with npm: npm install bootstrap-extra
+- Clone the repo: git clone https://github.com/IrfanGhuori/Bootstrap-Crystal.git
+- Install with npm: npm install bootstrap-Crystal
 
 
 
 ## Contributors
-Thank you to all our backers!  [[Become a backer](https://opencollective.com/Bootstrap-extra#backer)]
-[![Backers](https://opencollective.com/Bootstrap-extra/backers.svg?width=890)](https://opencollective.com/Bootstrap-extra#backers)
+Thank you to all our backers!  [[Become a backer](https://opencollective.com/Bootstrap-Crystal#backer)]
+[![Backers](https://opencollective.com/Bootstrap-Crystal/backers.svg?width=890)](https://opencollective.com/Bootstrap-Crystal#backers)
 
 
 <a href="CODE_CONTRIBUTORS.md"><img src="https://opencollective.com/swiper/contributors.svg?width=890&button=false" /></a>
