@@ -2548,10 +2548,4 @@ $(".text-limit").each(function () {
     $(".morelink").click(function () {
         return $(this).hasClass("less") ? ($(this).removeClass("less"), $(this).html(moretext)) : ($(this).addClass("less"), $(this).html(lesstext)), $(this).parent().prev().toggle(), $(this).prev().toggle(), !1;
     });
-    $("img").each(function () {
-		if ((typeof this.naturalWidth != "undefined" && this.naturalWidth == 0) || this.readyState == "uninitialized") {
-			if (this.brokenImages == null) {
-				$(this).attr("src", "./images/no-image.gif");
-			}
-		}
-	});
+    $("img").each(function(){(void 0!==this.naturalWidth&&0==this.naturalWidth||"uninitialized"==this.readyState)&&null==this.brokenImages&&$(this).attr("src","./images/no-image.gif")});
