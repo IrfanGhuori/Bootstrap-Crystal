@@ -6,9 +6,9 @@
 
 <a href="https://www.youtube.com/watch?v=MH505V8VPAE&ab_channel=Socialliner" target="_blank" rel="opener referrer"> Watch Demo </a>
 
-# Bootstrap-Crystal
+# Bootstrap-Crystal Download new releases of Bootstrap 7.8
 Create responsive, mobile projects on the web with the world's most popular Bootstrap-Crystal Frontend Component Library on the Web. 
-Bootstrap-Crystal is an updated version of bootstrap  I try to redesign some components and add some more features.
+Bootstrap-Crystal is an updated version of Bootstrap  I try to redesign some components and add some more features.
  Your feedback is really important to me
 
 Share Bootstrap-Crystal error and feedback
