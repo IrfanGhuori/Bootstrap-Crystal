@@ -1,46 +1,25 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
   <meta name="docsearch:language" content="en">
-  <meta name="docsearch:version" content="5">
+  <meta name="docsearch:version" content="7.8">
   <meta name="description"
-    content="Bootstrap Crystal 1.0 is a free and advanced open source front end development framework for the creation of websites and web apps.">
+    content="Bootstrap Extra is a free and advanced open source front end development framework for the creation of websites and web apps.">
   <meta name="keywords" content="HTML, CSS, JavaScript, Responsive, Mobile, App, Jquery">
   <meta name="author" content="Irfan Ghuori">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
   <link rel="stylesheet" href="css/animation.css" />
-  <link rel="stylesheet" href="./plugin/css/fonts.min.css">
   <link rel="stylesheet" href="css/bootstrap.css">
-
-
-  <!-- Favicon /-->
-
-  <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="./apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="./images/favicon/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="./images/favicon/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-  <!-- Favicon \ -->
-
-  <title>Bootstrap Crystal 1.0</title>
+  <link rel="stylesheet" href="plugin/css/fonts.min.css">
+  <title>Bootstrap Extra 7.8</title>
   <!-- Fonts and icons -->
   <style>
-            body {
+    
+    body {
             font: 1em/1.618 Inter, sans-serif;
             color: #224;
             background: url('./images/photo-1618005182384-a83a8bd57fbe.jpg') center/cover no-repeat fixed;
@@ -61,8 +40,28 @@
     .btn-switch {
       float: right;
     }
+    .heading {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #444343;
+      overflow: hidden;
+      padding-bottom: .3rem;
+      margin-bottom: .7rem;
+    }
 
-    
+    button {
+      margin: 5px;
+    }
+
+    .btn-switch {
+      float: right;
+    }
+
+    .btn i {
+      padding-right: 0.1em;
+      padding-left: -0.4em;
+
+    }
   </style>
 </head>
 
@@ -76,8 +75,8 @@
 
         <div>
           <div class="heading">Basic buttons</div>
-          <button type="button" class="btn btn-primary">Primary</button>
-          <button type="button" class="btn btn-secondary">Secondary</button>
+          <button type="button" class="btn btn-primary btn-5">Primary</button>
+          <button type="button" class="btn btn-secondary btn-5">Secondary</button>
           <button type="button" class="btn btn-success">Success</button>
           <button type="button" class="btn btn-danger">Danger</button>
           <button type="button" class="btn btn-warning">Warning</button>
@@ -115,7 +114,7 @@
         <hr>
         <div>
           <div class="heading">Outline buttons</div>
-          <button type="button" class="btn btn-sm btn-outline-primary">Primary</button>
+          <button type="button" class="btn btn-outline-primary">Primary</button>
           <button type="button" class="btn btn-outline-default">Default</button>
           <button type="button" class="btn btn-outline-secondary">Secondary</button>
           <button type="button" class="btn btn-outline-success">Success</button>
@@ -228,7 +227,7 @@
                 </div>
               </div>
               <div class="col-md-6">
-                <div class="card border-x1-top border-x1-bottom" style="margin:50px 0">
+                <div class="card" style="margin:50px 0">
                   <!-- Default panel contents -->
                   <div class="card-header">Checkbox to Round btn-switch</div>
 
@@ -296,8 +295,186 @@
           <!-- Additional buttons  -->
         </div>
 
+
+        <!--  -->
+        <div class="row">
+<div class="col-md-6">
+  <div class="card">
+    <div class="card-header">  Sizing Buttons </div>
+    <div class="card-body">
+      <p>Use Font Awesome Icons (included with this theme package) along with the sizing buttons as shown in
+        the examples below!</p>
+      <!-- Buttons (Default) -->
+       <div class="card-body"> 
+        code Example :
+        <pre>
+          <code>
+            &lt;a href="#" class="btn btn-primary btn-lg">
+              &lt;i class="fab fa-facebook-f">&lt;/i>
+            &lt;/a>
+          </code>
+       </div>
+      <div class="mb-2">
+        <code>.btn</code> only
+      </div>
+      <a href="#" class="btn btn-primary">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" class="btn btn-success">
+        <i class="fas fa-check"></i>
+      </a>
+      <a href="#" class="btn btn-info">
+        <i class="fas fa-info-circle"></i>
+      </a>
+      <a href="#" class="btn btn-warning">
+        <i class="fas fa-exclamation-triangle"></i>
+      </a>
+      <a href="#" class="btn btn-danger">
+        <i class="fas fa-trash"></i>
+      </a>
+      <!-- Buttons (Small) -->
+      <div class="mt-4 mb-2">
+        with <code>.btn-sm</code>
+      </div>
+      <a href="#" class="btn btn-primary btn-sm">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" class="btn btn-success btn-sm">
+        <i class="fas fa-check"></i>
+      </a>
+      <a href="#" class="btn btn-info btn-sm">
+        <i class="fas fa-info-circle"></i>
+      </a>
+      <a href="#" class="btn btn-warning btn-sm">
+        <i class="fas fa-exclamation-triangle"></i>
+      </a>
+      <a href="#" class="btn btn-danger btn-sm">
+        <i class="fas fa-trash"></i>
+      </a>
+      <!-- Buttons (Large) -->
+      <div class="mt-4 mb-2">
+        with <code>.btn-lg</code>
+      </div>
+      <a href="#" class="btn btn-primary btn-lg">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" class="btn btn-success btn-lg">
+        <i class="fas fa-check"></i>
+      </a>
+      <a href="#" class="btn btn-info btn-lg">
+        <i class="fas fa-info-circle"></i>
+      </a>
+      <a href="#" class="btn btn-warning btn-lg">
+        <i class="fas fa-exclamation-triangle"></i>
+      </a>
+      <a href="#" class="btn btn-danger btn-lg">
+        <i class="fas fa-trash"></i>
+      </a>
+
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6">
+  <div class="card">
+    <div class="card-header"> Split Buttons with Icon </div>
+    <div class="card-body">
+      <p>Works with any button colors, just use the <code>.btn-icon-split</code> class and
+        the markup in the
+        examples below. The examples below also use the <code>.text-white-50</code>
+        helper class on the
+        icons for additional styling, but it is not required.</p>
+        <div class="card-body">
+          code Example :
+          <pre>
+            <code>
+              &lt;a href="#" class="btn btn-primary btn-icon-split">
+                &lt;span class="icon text-white-50">
+                  &lt;i class="fas fa-flag">&lt;/i>
+                &lt;/span>
+                &lt;span class="text">Split Button Primary&lt;/span>
+              &lt;/a>
+            </code>
+          </pre>
+        </div>
+      <a href="#" class="btn btn-primary btn-icon-split">
+        <span class="icon text-white-50">
+          <i class="fas fa-flag"></i>
+        </span>
+        <span class="text">Split Button Primary</span>
+      </a>
+      <div class="my-2"></div>
+      <a href="#" class="btn btn-success btn-icon-split">
+        <span class="icon text-white-50">
+          <i class="fas fa-check"></i>
+        </span>
+        <span class="text">Split Button Success</span>
+      </a>
+      <div class="my-2"></div>
+      <a href="#" class="btn btn-info btn-icon-split">
+        <span class="icon text-white-50">
+          <i class="fas fa-info-circle"></i>
+        </span>
+        <span class="text">Split Button Info</span>
+      </a>
+      <div class="my-2"></div>
+      <a href="#" class="btn btn-warning btn-icon-split">
+        <span class="icon text-white-50">
+          <i class="fas fa-exclamation-triangle"></i>
+        </span>
+        <span class="text">Split Button Warning</span>
+      </a>
+      <div class="my-2"></div>
+      <a href="#" class="btn btn-danger btn-icon-split">
+        <span class="icon text-white-50">
+          <i class="fas fa-trash"></i>
+        </span>
+        <span class="text">Split Button Danger</span>
+      </a>
+      <div class="my-2"></div>
+      <a href="#" class="btn btn-secondary btn-icon-split">
+        <span class="icon text-white-50">
+          <i class="fas fa-arrow-right"></i>
+        </span>
+        <span class="text">Split Button Secondary</span>
+      </a>
+      <div class="my-2"></div>
+      <a href="#" class="btn btn-light btn-icon-split">
+        <span class="icon text-gray-600">
+          <i class="fas fa-arrow-right"></i>
+        </span>
+        <span class="text">Split Button Primary</span>
+      </a>
+      <div class="mb-4"></div>
+      <p>Also works with small and large button classes!</p>
+      <a href="#" class="btn btn-primary btn-icon-split btn-sm">
+        <span class="icon text-white-50">
+          <i class="fas fa-flag"></i>
+        </span>
+        <span class="text">Split Button Small</span>
+      </a>
+      <div class="my-2"></div>
+      <a href="#" class="btn btn-primary btn-icon-split btn-lg">
+        <span class="icon text-white-50">
+          <i class="fas fa-flag"></i>
+        </span>
+        <span class="text">Split Button Large</span>
+      </a>
+
+    </div>
+  </div>
+</div>
+
+
+          
+
+          
+
+        </div>
+
+        <!--  -->
         <div class="heading "> Button with icons</div>
-        <div class="mb-3">Basic example with Font Awesome icons: 900+ icons in Bootstrap Crystal 1.0 </div>
+        <div class="mb-3">Basic example with Font Awesome icons: 900+ icons in Bootstrap Extra </div>
 
         <div class="container">
           <a class="btn icon-btn btn-default" href="#Download"><i class="fa fa-home"></i> Download</a>
@@ -315,9 +492,6 @@
       </div>
 
     </div>
-
-
-
   </div>
 
 
