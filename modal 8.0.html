@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
+  <meta name="docsearch:language" content="en">
+  <meta name="docsearch:version" content="7.8">
+  <meta name="description" content="Bootstrap Crystal is a free and advanced open source front end development framework for the creation of websites and web apps.">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Responsive, Mobile, App, Jquery">
+  <meta name="author" content="Irfan Ghuori">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+  <link rel="stylesheet" href="css/animation.css" />
+  <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Bootstrap Crystal 7.8</title>
+<style>
+
+</style>
+</head>
+
+<body>
+  <img src="./images/bg-1.jpg" class="img-cover" alt="background image">
+  <div class="container"><br>
+    <div class="card">
+
+      <div class="card-header display-7"> Modal </div>
+      <div class="card-body">
+        <div class="display-7"> </div>
+
+        <!-- Simple Modal -->
+        <div class="code-container">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Launch demo modal
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog ">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body test">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <pre>
+	<code>
+		<!-- Simple Modal -->
+<div class="code-container">
+	      <!-- Simple Modal -->
+        <div class="code-container">
+          <!-- Button trigger modal -->
+          &lt;button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"&gt;
+            Launch demo modal
+          &lt;/button&gt;
+
+          &lt;!-- Modal --&gt;
+          &lt;div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"&gt;
+            &lt;div class="modal-dialog"&gt;
+              &lt;div class="modal-content"&gt;
+                &lt;div class="modal-header"&gt;
+                  &lt;h5 class="modal-title" id="exampleModalLabel"&gt;Modal title&lt;/h5&gt;
+                  &lt;button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"&gt;&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class="modal-body"&gt;
+                  ...
+                &lt;/div&gt;
+                &lt;div class="modal-footer"&gt;
+                  &lt;button type="button" class="btn btn-secondary" data-bs-dismiss="modal"&gt;Close&lt;/button&gt;
+                  &lt;button type="button" class="btn btn-primary"&gt;Save changes&lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+       &lt;div&gt;
+
+	</code>
+</pre>
+          <!-- Simple Modal -->
+
+
+          <!-- Extra Desgin  -->
+          <hr>
+
+          <div>
+
+            <div class="container">
+              <h2 id="optional-sizes">Optional sizes<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#optional-sizes" style="padding-left: 0.375em;"></a></h2>
+              <p>Modals have three optional sizes, available via modifier classes to be placed on a <code>.modal-dialog</code>. 
+                These sizes kick in at certain breakpoints to avoid horizontal scrollbars on narrower viewports.</p>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Size</th>
+                    <th>Class</th>
+                    <th>Modal max-width</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Small</td>
+                    <td><code>.modal-sm</code></td>
+                    <td><code>300px</code></td>
+                  </tr>
+                  <tr>
+                    <td>Default</td>
+                    <td class="text-muted">None</td>
+                    <td><code>500px</code></td>
+                  </tr>
+                  <tr>
+                    <td>Large</td>
+                    <td><code>.modal-lg</code></td>
+                    <td><code>800px</code></td>
+                  </tr>
+                  <tr>
+                    <td>Extra large</td>
+                    <td><code>.modal-xl</code></td>
+                    <td><code>1140px</code></td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>  Our default modal without modifier class constitutes the “medium” size modal. </p>
+                <code>
+                  <pre>
+              &lt;div class="modal-dialog modal-xl">...&lt;/div>
+              &lt;div class="modal-dialog modal-lg">...&lt;/div>
+              &lt;div class="modal-dialog modal-sm">...&lt;/div>
+                  </pre>
+                </code>
+
+           
+<br>
+
+              <h1> Play YouTube and Vimeo Videos</h1>
+
+              <pre>
+
+	<code>
+<!-- Button trigger modal -->
+&lt;button type="button" class="btn btn-primary video-btn" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/Jfrjeg26Cwk" data-bs-target="#myModal"&gt;
+  Play Video 1 - autoplay
+  &lt;/button&gt;
+  &lt;div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true"&gt;
+  &lt;div class="modal-dialog modal-lg" role="document"&gt;
+    &lt;div class="modal-content"&gt;
+     &lt;div class="modal-body  video-model"&gt;
+        &lt;button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"&gt;&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;!-- 16:9 aspect ratio --&gt;
+        &lt;div class="ratio ratio-16x9"&gt;
+          &lt;iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
+            allow="autoplay"&gt;&lt;/iframe&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+Code Tutorial:
+
+1- button and modal IDs should be the same | button > data-bs-target="#myModal" - modal id="myModal"
+2- Do not change the iframe, IDs are controlled by javascript and set for multiple video IDs. | iframe > id="video"
+3- you can place a video model and its button anywhere in the body of HTML
+4- Click on the video that you want to show in madel copy video ID from it URL 
+
+                                              Copy
+                                               ↓
+Example: https://www.youtube.com/watch?v=<strong style="color: rgb(56, 75, 241);">MH505V8VPAE</strong>                   Paste
+                                                                          ↓
+ And simply replace old ID |  data-src="https://www.youtube.com/embed/MH505V8VPAE"
+
+ for the vimeo.com just put the video ID after https://player.vimeo.com/video/<strong style="color: rgb(56, 75, 241);">YourVideoIDHere</strong>?badge=0
+ ?badge=0 Is Optioanl 
+
+ Video modal class &lt;div class="modal-body <strong style="color: rgb(56, 75, 241);">video-model</strong>"&gt;
+
+	</code>
+</pre>
+
+
+              <div class="container">
+                <h1>Play YouTube or Vimeo Videos in Bootstrap 5 Modal</h1>
+
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary video-btn" data-bs-toggle="modal"
+                  data-src="https://www.youtube.com/embed/MH505V8VPAE" data-bs-target="#myModal">
+                  Play Video 1 - autoplay
+                </button>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary video-btn" data-bs-toggle="modal"
+                  data-src="https://www.youtube.com/embed/hp7DBhdC1TU" data-bs-target="#myModal">
+                  Play Video 2
+                </button>
+
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary video-btn" data-bs-toggle="modal"
+                  data-src="https://www.youtube.com/embed/yX2YHVwj8_o" data-bs-target="#myModal">
+                  Play Video 3
+                </button>
+
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary video-btn" data-bs-toggle="modal"
+                  data-src="https://player.vimeo.com/video/370531748?badge=0" data-bs-target="#myModal">
+                  Play Vimeo Video
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+
+
+                      <div class="modal-body  video-model">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></span>
+                        </button>
+                        <!-- 16:9 aspect ratio -->
+                        <div class="ratio ratio-16x9">
+                          <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
+                            allow="autoplay"></iframe>
+                        </div>
+
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+<!--  -->
+                <br>
+                <div class="display-7 ml-3 mt-4">Watch tutorial</div>
+                <div class="d-flex justify-content-center mt-5">
+                  <div class="card col-md-8 shadow-6dp p-0">
+                    <video style="width: 100%;" controls>
+                      <source src="images/tutorial.mp4" type="video/mp4">
+                    </video>
+                  </div>
+
+                </div>
+                <br><br>
+              </div>
+
+            </div>
+            <!-- Extra Desgin  -->
+
+          </div>
+          <!-- Card-body -->
+        </div>
+        <!-- Card -->
+
+
+
+
+      </div>
+
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+</script>
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
+  <meta name="docsearch:language" content="en">
+  <meta name="docsearch:version" content="7.8">
+  <meta name="description" content="Bootstrap Crystal is a free and advanced open source front end development framework for the creation of websites and web apps.">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Responsive, Mobile, App, Jquery">
+  <meta name="author" content="Irfan Ghuori">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+  <link rel="stylesheet" href="css/animation.css" />
+  <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Bootstrap Crystal 7.8</title>
+  
+</head>
+
+<body>
+  <img src="./images/bg-3.png" class="img-cover" alt="background image">
+<div class="container mt-x9">
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          
+            <div class="menu-icon">
+              <input class="menu-toggler_icon" type="checkbox" />
+              <div>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+<div class="card">
+
+<div class="card-body">
+<p class="display-6">Offcanvas  </p>
+<p>Transform your expanding and collapsing navbar into an offcanvas drawer with the offcanvas component. We extend both the offcanvas default styles and use our .navbar-expand-* classes to create a dynamic and flexible navigation sidebar.
+    In the example below, to create an offcanvas navbar that is always collapsed across all breakpoints, omit the .navbar-expand-* class entirely.</p>
+
+    <div>
+        <!--  -->
+        <nav class="navbar ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Offcanvas navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+               
+                <div class="menu-icon">
+                  <input class="menu-toggler_icon" type="checkbox" />
+                  <div>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+        <!--  -->
+<br>
+
+
+
+
+
+
+</div>
+ 
+<!-- body -->
+<code class="code">
+  <pre>
+&lt;nav class="navbar bg-light fixed-top"&gt;
+  &lt;div class="container-fluid"&gt;
+    &lt;a class="navbar-brand" href="#"&gt;Offcanvas navbar&lt;/a&gt;
+    &lt;button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"&gt;      
+    &lt;div class="menu-icon"&gt;
+      &lt;input class="menu-toggler_icon" type="checkbox" /&gt;
+      &lt;div&gt;
+        &lt;span&gt;&lt;/span&gt;
+        &lt;span&gt;&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/button&gt;
+    &lt;div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"&gt;
+      &lt;div class="offcanvas-header"&gt;
+        &lt;h5 class="offcanvas-title" id="offcanvasNavbarLabel"&gt;Offcanvas&lt;/h5&gt;
+        &lt;button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"&gt;&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class="offcanvas-body"&gt;
+        &lt;ul class="navbar-nav justify-content-end flex-grow-1 pe-3"&gt;
+          &lt;li class="nav-item"&gt;
+            &lt;a class="nav-link active" aria-current="page" href="#"&gt;Home&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="nav-item"&gt;
+            &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="nav-item dropdown"&gt;
+            &lt;a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;
+              Dropdown
+            &lt;/a&gt;
+            &lt;ul class="dropdown-menu"&gt;
+              &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;
+                &lt;hr class="dropdown-divider"&gt;
+              &lt;/li&gt;
+              &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;form class="d-flex mt-3" role="search"&gt;
+          &lt;input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"&gt;
+          &lt;button class="btn btn-outline-success" type="submit"&gt;Search&lt;/button&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+</pre>
+</code>
+<!-- body -->
+
+    <img class="img-cover" src="images/website-design-background.png" alt="">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/popper.min.js" ></script>
+    <script src="js/bootstrap.js"></script>
+   
+    <script>
+    </script>
+
+
+</body>
+
+</html>
