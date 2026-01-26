@@ -3,7 +3,7 @@
 [![Pinterest](https://img.shields.io/badge/Pinterest-%23E60023.svg?logo=Pinterest&logoColor=white)](https://pinterest.com/irfanghuori_) 
 
 <!-- If the image is in the same folder as the README -->
-![Project Screenshot](https://raw.githubusercontent.com/IrfanGhuori/Bootstrap-Crystal/refs/heads/main/images/cover-img.png?token=GHSAT0AAAAAADS6XZWVYPV6H5CR5FIDOERW2LXALZA)
+![Project Screenshot](images/cover-img.png)
 
 
 
