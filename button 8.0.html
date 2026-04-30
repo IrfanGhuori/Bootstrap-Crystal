@@ -1,19 +1,37 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
   <meta name="docsearch:language" content="en">
-  <meta name="docsearch:version" content="7.8">
-  <meta name="description" content="Bootstrap Crystal is a free and advanced open source front end development framework for the creation of websites and web apps.">
+  <meta name="docsearch:version" content="8.0">
+  <meta name="description"
+    content="Bootstrap Extra is a free and advanced open source front end development framework for the creation of websites and web apps.">
   <meta name="keywords" content="HTML, CSS, JavaScript, Responsive, Mobile, App, Jquery">
   <meta name="author" content="Irfan Ghuori">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
   <link rel="stylesheet" href="css/animation.css" />
   <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="plugin/webfont/webfont.min.js"></script>
 
-  <title>Bootstrap Crystal 7.8</title>
+  <script>
+    WebFont.load({
+      google: {
+        "families": ["Lato:300,400,700,900"]
+      },
+      custom: {
+        "families": ["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"],
+        urls: ['plugin/css/fonts.min.css']
+      },
+      active: function () {
+        sessionStorage.fonts = true;
+      }
+    });
+  </script>
+  <title>Bootstrap Extra 8.0</title>
   <!-- Fonts and icons -->
   <style>
     .heading {
@@ -32,11 +50,12 @@
     .btn-switch {
       float: right;
     }
-    .btn i{
-     padding-right: 0.1em;
-     padding-left: -0.4em;
 
-      }
+    .btn i {
+      padding-right: 0.1em;
+      padding-left: -0.4em;
+
+    }
   </style>
 </head>
 
@@ -199,8 +218,34 @@
                       </label>
                     </li>
                   </ul>
+
+
+               
+                  <hr>
+                
+                <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                      btn-switch Danger
+                      <label class="btn-switch btn-switch-sm">
+                        <input type="checkbox" class="danger">
+                        <span class="slider"></span>
+                      </label>
+                    </li>
+                  </ul>
+                      <pre>
+                    <code>
+                    Code Example :
+                    &lt;label class="btn-switch-sm">
+                    &lt;input type="checkbox" class="primary">
+                    &lt;span class="slider">&lt;span>
+                    &lt;label>
+                    </code>
+                    </pre>
+
                 </div>
               </div>
+
+
               <div class="col-md-6">
                 <div class="card" style="margin:50px 0">
                   <!-- Default panel contents -->
@@ -212,7 +257,7 @@
           <code>
            Code Example :
            
-            &lt;label class="btn-switch ">
+            &lt;label class="btn-switch">
               &lt;input type="checkbox" class="primary">
               &lt;span class="slider round">&lt;span>
             &lt;label>
@@ -257,12 +302,32 @@
                     </li>
                     <li class="list-group-item">
                       btn-switch Danger
-                      <label class="btn-switch ">
+                      <label class="btn-switch btn-switch">
                         <input type="checkbox" class="danger">
                         <span class="slider round"></span>
                       </label>
                     </li>
                   </ul>
+<hr>
+                
+                <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                      btn-switch Danger
+                      <label class="btn-switch btn-switch-sm">
+                        <input type="checkbox" class="danger">
+                        <span class="slider round"></span>
+                      </label>
+                    </li>
+                  </ul>
+                      <pre>
+                    <code>
+                    Code Example :
+                    &lt;label class="btn-switch-sm">
+                    &lt;input type="checkbox" class="primary">
+                    &lt;span class="slider round">&lt;span>
+                    &lt;label>
+                    </code>
+                    </pre>
                 </div>
               </div>
             </div>
@@ -270,23 +335,94 @@
           <!-- Additional buttons  -->
         </div>
 
-        <div class="heading "> Button with icons</div>
-        <div class="mb-3">Basic example with Font Awesome icons: 900+ icons in Bootstrap Crystal </div>
 
-        <div class="container">
-          <a class="btn icon-btn btn-default" href="#Download"><i class="fa fa-home"></i> Download</a>
-          <a class="btn icon-btn btn-muted" href="#Unavailable"><i class="fas fa-lock"></i>  Unavailable</a>
-          <a class="btn icon-btn btn-primary" href="#Cart"><i class="fas fa-thumbs-up"></i> Like</a>
-          <a class="btn icon-btn btn-success" href="#Share"><i class="fas fa-cart-plus"></i> Cart </a>
-          <a class="btn icon-btn btn-info" href="#Share"><i class="fas fa-share-alt"></i> Share</a>
-          <a class="btn icon-btn btn-warning text-white" href="#"><i class="fas fa-minus-circle"></i> Remove</a>
-          <a class="btn icon-btn btn-danger" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
-          </div>
-      
-      
+        <section id="subsection-sample-brands">
+          <!--Subsection title-->
+          <h4 class="mt-5">Sample brands</h4>
+
+          <!--Description-->
+          <p>A few the most popular brands in form of social buttons.</p>
+
+          <!--Section: Demo-->
 
 
-      </div>
+
+
+
+
+
+          <section class="pb-4">
+            <div class="border rounded-5">
+
+              <section class="p-4 text-center w-100">
+                <!-- Facebook -->
+                <a class="btn text-white ripple-effect" style="background-color: #3b5998;" href="#!" role="button"><i
+                    class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn text-white ripple-effect" style="background-color: #55acee;" href="#!" role="button"><i
+                    class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn text-white ripple-effect" style="background-color: #dd4b39;" href="#!" role="button"><i
+                    class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn text-white ripple-effect" style="background-color: #ac2bac;" href="#!" role="button"><i
+                    class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn text-white ripple-effect" style="background-color: #0082ca;" href="#!" role="button"><i
+                    class="fab fa-linkedin-in"></i></a>
+
+                <!-- Pinterest -->
+                <a class="btn text-white ripple-effect" style="background-color: #c61118;" href="#!" role="button"><i
+                    class="fab fa-pinterest"></i></a>
+
+                <!-- Vkontakte -->
+                <a class="btn text-white ripple-effect" style="background-color: #4c75a3;" href="#!" role="button"><i
+                    class="fab fa-vk"></i></a>
+
+                <!-- Stack overflow -->
+                <a class="btn text-white ripple-effect" style="background-color: #ffac44;" href="#!" role="button"><i
+                    class="fab fa-stack-overflow"></i></a>
+
+                <!-- Youtube -->
+                <a class="btn text-white ripple-effect" style="background-color: #ed302f;" href="#!" role="button"><i
+                    class="fab fa-youtube"></i></a>
+
+                <!-- Slack -->
+                <a class="btn text-white ripple-effect" style="background-color: #481449;" href="#!" role="button"><i
+                    class="fab fa-slack-hash"></i></a>
+
+                <!-- Github -->
+                <a class="btn text-white ripple-effect" style="background-color: #333333;" href="#!" role="button"><i
+                    class="fab fa-github"></i></a>
+
+                <!-- Dribbble -->
+                <a class="btn text-white ripple-effect" style="background-color: #ec4a89;" href="#!" role="button"><i
+                    class="fab fa-dribbble"></i></a>
+
+                <!-- Reddit -->
+                <a class="btn text-white ripple-effect" style="background-color: #ff4500;" href="#!" role="button"><i
+                    class="fab fa-reddit-alien"></i></a>
+
+                <!-- Whatsapp -->
+                <a class="btn text-white ripple-effect" style="background-color: #25d366;" href="#!" role="button"><i
+                    class="fab fa-whatsapp"></i></a>
+              </section>
+
+               <pre>
+                    <code>
+                    Code Example :
+                    &lt;label class="btn-switch-sm">
+                    &lt;a class="btn text-white ripple-effect" style="background-color: #25d366;" href="#!" role="button">
+                    &lt;i class="fab fa-whatsapp">&lt;/i>&lt;/a>
+                    </code>
+                    </pre>
+
+      <!--Section: Demo-->
+      </section>
 
     </div>
   </div>
@@ -294,7 +430,7 @@
 
 
 
-<br><br>
+  <br><br>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

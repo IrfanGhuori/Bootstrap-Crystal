@@ -5070,7 +5070,7 @@ button.close {
     border: none;
     font-size: 0.8rem;
     letter-spacing: 0.5px;
-    color: #c71616;
+    color: #fff;
     cursor: pointer;
 }
 .alert-default {
@@ -16545,4 +16545,27 @@ select option {
 .group img {
     width: 30px;
     height: 30px;
+}
+
+.btn-switch-sm {
+  display: inline-block;
+  width: 29px;
+  height: 13px
+}
+
+.btn-switch-sm > .slider:before {
+  position: absolute;
+  content: "";
+  height: 7px;
+  width: 7px;
+  left: 3px;
+  background-color: #fff;
+  transition: .4s ease-in-out;
+  bottom: 3px
+}
+
+.btn-switch-sm > input:checked + .slider:before {
+  -webkit-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(15px)
 }
