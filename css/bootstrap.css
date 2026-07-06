@@ -1,4 +1,5 @@
-@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 :root,
 [data-bs-theme="light"] {
     --bs-blue: #0d6efd;
@@ -68,18 +69,18 @@
     --bs-white-rgb: 255, 255, 255;
     --bs-black-rgb: 0, 0, 0;
     --arrow-icon: url(../images/down-arrow.svg);
-    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-sans-serif: "Poppins", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-body-font-family: "Poppins", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     --bs-body-font-size: 1rem;
     --bs-body-font-weight: 400;
     --bs-body-line-height: 1.5;
-    --bs-body-color: #212529;
+    --bs-body-color: rgba(33, 37, 41, 0.75);
     --bs-body-color-rgb: 33, 37, 41;
     --bs-body-bg: rgba(255, 255, 255, 0.8);
     --bs-body-bg-rgb: 255, 255, 255;
-    --bs-emphasis-color: #000;
+    --bs-emphasis-color: rgba(0, 0, 0, 0.75);
     --bs-emphasis-color-rgb: 0, 0, 0;
     --bs-secondary-color: rgba(33, 37, 41, 0.75);
     --bs-secondary-color-rgb: 33, 37, 41;
@@ -123,11 +124,11 @@
 }
 [data-bs-theme="dark"] {
     color-scheme: dark;
-    --bs-body-color: #dee2e6;
+    --bs-body-color: rgba(222, 226, 230, 0.92);
     --bs-body-color-rgb: 222, 226, 230;
     --bs-body-bg: #212529;
     --bs-body-bg-rgb: 33, 37, 41;
-    --bs-emphasis-color: #fff;
+    --bs-emphasis-color: rgba(255, 255, 255, 0.95);
     --bs-emphasis-color-rgb: 255, 255, 255;
     --bs-secondary-color: rgba(222, 226, 230, 0.75);
     --bs-secondary-color-rgb: 222, 226, 230;
@@ -199,6 +200,7 @@ body {
     background-color: var(--bs-body-bg);
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-smooth: auto;
 }
 hr {
     margin: 1rem 0;
@@ -1752,7 +1754,7 @@ progress {
     --bs-table-color-state: initial;
     --bs-table-bg-state: initial;
     --bs-table-color: var(--bs-emphasis-color);
-    --bs-table-bg: var(--bs-white-glass);
+    --bs-table-bg: rgb(252 252 255 / 72%);
     --bs-table-border-color: var(--bs-border-color);
     --bs-table-accent-bg: transparent;
     --bs-table-striped-color: var(--bs-emphasis-color);
@@ -1762,8 +1764,14 @@ progress {
     --bs-table-hover-color: var(--bs-emphasis-color);
     --bs-table-hover-bg: rgba(var(--bs-emphasis-color-rgb), 0.075);
     width: 100%;
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    border: 1px solid rgba(218, 218, 218, 0.3);
     margin-bottom: 1rem;
     vertical-align: top;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
     border-color: var(--bs-table-border-color);
 }
 .table > :not(caption) > * > * {
@@ -12702,7 +12710,7 @@ button.swiper-pagination-bullet {
     -o-user-select: none;
     user-select: none;
     cursor: pointer;
-    font-family: Sans-Serif;
+    font-family: "Poppins", "Segoe UI", sans-serif;
     padding-top: 40px;
     text-align: center;
     font-size: 50px;
@@ -12791,7 +12799,7 @@ button.swiper-pagination-bullet {
     margin: 0;
     max-width: 100%;
     background-color: rgba(230, 230, 230, 0.7);
-    color: #666;
+    color: var(--bs-secondary-color);
     overflow: hidden;
     -moz-osx-font-smoothing: grayscale;
     -webkit-backface-visibility: hidden;
@@ -12825,12 +12833,12 @@ button.swiper-pagination-bullet {
 [class*=" imghvr-"] h3,
 [class^="imghvr-"] h3 {
     font-weight: 700;
-    color: #333;
+    color: var(--bs-body-color);
     margin-bottom: 2px;
 }
 [class*=" imghvr-"] p,
 [class^="imghvr-"] p {
-    font-family: Lora, sans-serif;
+    font-family: "Poppins", "Segoe UI", sans-serif;
     font-size: 0.9em;
 }
 [class*=" imghvr-"] a,
@@ -14736,7 +14744,7 @@ button.swiper-pagination-bullet {
     -o-user-select: none;
     user-select: none;
     cursor: pointer;
-    font-family: Sans-Serif;
+    font-family: "Poppins", "Segoe UI", sans-serif;
     padding-top: 40px;
     text-align: center;
     font-size: 50px;
@@ -14825,7 +14833,7 @@ button.swiper-pagination-bullet {
     margin: 0;
     max-width: 100%;
     background-color: rgba(230, 230, 230, 0.7);
-    color: #666;
+    color: var(--bs-secondary-color);
     overflow: hidden;
     -moz-osx-font-smoothing: grayscale;
     -webkit-backface-visibility: hidden;
@@ -14859,12 +14867,12 @@ button.swiper-pagination-bullet {
 [class*=" imghvr-"] h3,
 [class^="imghvr-"] h3 {
     font-weight: 700;
-    color: #333;
+    color: var(--bs-body-color);
     margin-bottom: 2px;
 }
 [class*=" imghvr-"] p,
 [class^="imghvr-"] p {
-    font-family: Lora, sans-serif;
+    font-family: "Poppins", "Segoe UI", sans-serif;
     font-size: 0.9em;
 }
 [class*=" imghvr-"] a,
@@ -16328,12 +16336,12 @@ input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
 .uneditable-input:focus {
-    border-color: #666;
+    border-color: var(--bs-border-color);
     outline: 0 none;
     box-shadow: none;
 }
 .form-control:focus {
-    border-color: #666;
+    border-color: var(--bs-border-color);
     outline: 0 none;
 }
 :root {
@@ -16359,7 +16367,7 @@ select::-ms-expand {
     display: none;
 }
 select:focus {
-    border-color: #666;
+    border-color: var(--bs-border-color);
     outline: 0 none;
     box-shadow: none;
 }
